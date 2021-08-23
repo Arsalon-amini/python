@@ -32,3 +32,16 @@ first = "arsalon"
 last = "amini"
 full = f"{first} {last}"
 print(full)
+
+#string methods
+course = "  Python for Machine Learning"
+print(course.upper())
+print(course.lower())
+print(course.title())
+print(course.strip()) #removes whitespace
+
+print(course.find("Mach"))  #returns index of chars | case sensitive 
+print(course.replace("P", "J"))
+
+print("Machine" in course)  #check for existance in string
+print("Machine" not in course)  # check for !existance in string
