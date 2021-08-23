@@ -20,3 +20,15 @@ print(course[:])
 #strings are immutable - python allocates new memory and copies previous string into new memory + appends / deletes / slices chars
 print(id(course))
 print(id(course[0]))
+
+#formatted strings (concatination)
+first = "arsalon"
+last = "amini"
+full = first + ' ' + last
+print(full)
+
+#formatted strings (expression evaluated at runtime) - any valid expression between curly braces
+first = "arsalon"
+last = "amini"
+full = f"{first} {last}"
+print(full)
