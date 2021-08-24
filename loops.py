@@ -32,7 +32,7 @@ for name in names:
         print("not found")
 
 
-#cleaner python syntax, else clause executed if for loop completes successfully without immediate break
+#for else - cleaner python syntax, else clause executed if for loop completes successfully without immediate break
 names = ["Arsalon", "Dylan", "Jonathan", "Peter"]
 for name in names:
     if name.startswith("A"):
@@ -40,3 +40,19 @@ for name in names:
         break
     else:
         print("not found")
+
+#while loops
+counter = 0
+end = 5
+
+while counter != end:
+    counter += 1
+    print(counter)
+    
+
+#can use an else block that's executed after the while loop is successfully executed
+while counter != end:
+    counter += 1
+    print(counter)
+else:
+    print("program finished")
