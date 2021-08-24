@@ -56,3 +56,13 @@ while counter != end:
     print(counter)
 else:
     print("program finished")
+
+
+i = 1
+
+while i < 10:
+    print(i)
+    i += 1
+else:
+    print("program finished")
+
