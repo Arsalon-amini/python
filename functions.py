@@ -36,3 +36,13 @@ def function_hints(number: int, another_number: int = 3) -> int:
     return number + another_number
 
 print(function_hints(3))
+
+
+#passing arbitrary number of elements | python converts *arg into a tuple 
+def multiply(*list):
+    total = 1
+    for number in list:
+        total *= number
+    return total
+
+print(multiply(2, 3, 4, 5))
