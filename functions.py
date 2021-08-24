@@ -46,3 +46,17 @@ def multiply(*list):
     return total
 
 print(multiply(2, 3, 4, 5))
+
+#xxargs - can pass multiple key:value pairs as args
+def save_user(**user):
+    print(user["name"])
+
+save_user(id=1, name="admin")
+
+#function scope (python doesn't have block level scope, variable accessible anywhere in function)
+def greet():
+    if True:
+        message = "it's a true message"
+    print('defined inside a block (if statement), and still accessible within the function', message)
+
+greet()
